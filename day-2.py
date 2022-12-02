@@ -2,7 +2,7 @@ win = {"A": "Y", "B": "Z", "C": "X"}
 draw = {"A": "X", "B": "Y", "C": "Z"}
 lose = {"A": "Z", "B": "X", "C": "Y"}
 
-data = list(map(lambda x: x.split(), open("input/day2.txt").read().splitlines()))
+data = list(map(str.split, open("input/day2.txt").read().splitlines()))
 
 
 def calculate(values):
