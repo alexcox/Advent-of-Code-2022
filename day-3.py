@@ -17,8 +17,8 @@ def badges(all_elves):
 part1 = sum(
     score(item)
     for backpack in data
-    for item in set(backpack[: int(len(backpack) / 2)])
-    if item in backpack[int(len(backpack) / 2) :]
+    for item in set(backpack[: len(backpack) // 2])
+    if item in backpack[len(backpack) // 2 :]
 )
 
 part2 = sum(score(badge) for badge in badges(data))
